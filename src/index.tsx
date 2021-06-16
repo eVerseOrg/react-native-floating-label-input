@@ -769,7 +769,7 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
           </View>
           {showCountdown && maxLength && (
             <Text style={countdown}>
-              {maxLength - (value ? value.length : 0)} {countdownLabel}
+              {value ? value.length : 0}/{ maxLength }
             </Text>
           )}
         </View>
